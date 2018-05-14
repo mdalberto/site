@@ -3,9 +3,13 @@
 --- 
 
 
+
 // This is the main scss index file which will 
 // pull everything together from _scss folder.
 
+@import "_vars";
 @import "_main";
 @import "_normalize";
+@import "_custom";
+
 

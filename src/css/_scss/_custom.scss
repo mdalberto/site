@@ -1,0 +1,121 @@
+//custom
+
+html{
+color:white;
+font-family:arial;	
+font-size:14px;
+
+    @media ($tablet-up) {
+		font-size:16px;
+    }
+
+}
+
+body{
+	line-height: 1.5rem;
+}
+
+#globalHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    z-index: 5;
+}
+
+.logo{
+	margin: 2rem 0 0 3rem;
+
+}
+
+
+ .hero {
+ 	float:left;
+    background: url(/images/background-sm.svg);
+    height: 800px;
+    width: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @media ($tablet-up) {
+	    background: url(/images/background.svg);
+	    height: 1000px;
+	    width: 100%;
+	    background-position: top center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    position: relative;
+	}
+}
+
+
+
+.about{
+	background: rgb(55,173,202);
+	background: linear-gradient(0deg, rgba(55,173,202,1) 0%, rgba(140,207,217,1) 100%);
+	width:100%;
+	min-height:1000px;
+}
+
+h1{
+	font-family: $slab-font;
+	font-weight: normal;
+	line-height:2.3rem;
+}
+
+p{
+	font-size:1.1rem;
+}
+
+.col-left{
+
+
+    margin: 250px auto;
+    width: 300px;
+    text-align: center;
+    @media ($tablet-up) {
+	
+	    width:400px;
+		float:left;
+		margin-top: 100px;
+	    margin-left: 100px;
+	}
+}
+
+
+.coin-1{
+	position: absolute;
+    left: 50%;
+    top: 4%;
+    margin-left: -3.3rem;
+    z-index: 100;
+    background-image: url(/images/coin.png);
+    width: 100rem;
+    height: 40rem;
+    width: 10rem;
+    height: 10rem;
+    background-size: cover;
+}
+
+
+
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
