@@ -1,12 +1,12 @@
 //custom
 
 html{
-color:white;
-font-family:arial;	
-font-size:14px;
+	color:white;
+	font-family:arial;	
+	font-size:16px;
 
     @media ($tablet-up) {
-		font-size:16px;
+		font-size:22px;
     }
 
 }
@@ -25,31 +25,51 @@ body{
 }
 
 .logo{
-	margin: 2rem 0 0 3rem;
-
+	margin: 2rem 0 0 1rem;
+    @media ($tablet-up) {	
+		margin: 2rem 0 0 3rem;
+	}
 }
 
+///////////////////////
+.hero-container{
+	overflow: hidden;
+	width: 100%;
+	float:left;
+	position:relative;
+	height: 860px;
+	    @media ($tablet-up) {
+	    height: 1690px;
+	    }
+}
 
-
- .hero {
- 	float:left;
-    background: url(../images/background-sm.svg);
-    height: 800px;
-    width: 100%;
-    background-position: top center;
+ .mountain {
+ 	position:absolute;
+ 	background: url(../images/background-sm.svg);
+    height: 1200px;
+    width: 750px;
+    top: -330px;
+    left:50%;
+    margin-left: -375px;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+
 
     @media ($tablet-up) {
 	    background: url(../images/background.svg);
-	    height: 1000px;
-	    width: 100%;
+	    height: 1740px;
+	    width: 2800px;
 	    background-position: top center;
 	    background-repeat: no-repeat;
 	    background-size: cover;
-	    position: relative;
+	    top: -50px;
+	    left: 50%;
+	    margin: 0;
+	    margin-left: -1400px;
 	}
+
+
 }
 
 
@@ -59,46 +79,122 @@ body{
 	background: linear-gradient(0deg, rgba(55,173,202,1) 0%, rgba(140,207,217,1) 100%);
 	width:100%;
 	min-height:1000px;
+	float:left;
 }
+
+
 
 h1{
 	font-family: $slab-font;
 	font-weight: normal;
 	line-height:2.3rem;
+	margin: 0 0 0.6rem 0;
 }
 
 p{
-	font-size:1.1rem;
+	margin: 0 0 1.25rem 0;
+    font-size: .8rem;
+    line-height: 1.2rem;
 }
 
-.col-left{
+.form{
 
-
-    margin: 250px auto;
+	position:relative;
+    margin: 320px auto;
     width: 300px;
     text-align: center;
+    color: black;
+
     @media ($tablet-up) {
-	
-	    width:400px;
+	    text-align: left;
+	        width: 450px;
 		float:left;
-		margin-top: 100px;
+	    margin-top: 160px;
 	    margin-left: 100px;
+	        color:white;
+	}
+
+	input{
+
+border-radius: 6px;
+    padding: .9rem .7rem;
+    border: solid 1px #cdcccd;
+    display: block;
+    background-color: #f0f0f0;
+    width: 92%;
+    color: black;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    margin: 0 0 0.9rem 0;
+
+	    @media ($tablet-up) {
+	    	    width: 280px;
+	    	display:inline-block;
+	    	background-color:transparent;;
+	    	color:white;
+	    	border:white 1px solid;
+	    	padding: .7rem;
+    		font-size: .65rem;
+    		    margin-right: 10px;
+		}
+
+
+
+	}
+
+	    @media ($tablet-up) {
+	input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: white;
+	}
+	input::-moz-placeholder { /* Firefox 19+ */
+	  color: white;
+	}
+	input:-ms-input-placeholder { /* IE 10+ */
+	  color: white;
+	}
+	input:-moz-placeholder { /* Firefox 18- */
+	  color: white;
+	}
+}
+	.btn{
+		background-color: red;
+		border:none;
+		color:white;
+		width:100%;
+		@media ($tablet-up) {
+	    	width:120px;
+	    	display:inline-block;
+	    	margin-right:0;
+		}
 	}
 }
 
 
 .coin-1{
+
 	position: absolute;
     left: 50%;
-    top: 4%;
-    margin-left: -3.3rem;
+    top: -25px;
+    margin-left: -5.5rem;
     z-index: 100;
-    background-image: url(/site/images/coin.png);
-    width: 100rem;
-    height: 40rem;
-    width: 10rem;
-    height: 10rem;
+    background-image: url(../images/coin.png);
+    width: 12rem;
+    height: 12rem;
     background-size: cover;
+
+	@media ($tablet-up) {
+	    position: absolute;
+	    left: 50%;
+	    top: 100px;
+	    margin-left: -2.6rem;
+	    z-index: 100;
+	    background-image: url(../images/coin.png);
+	    width: 100rem;
+	    height: 40rem;
+	    width: 10rem;
+	    height: 10rem;
+	    background-size: cover;
+	}
 }
 
 
