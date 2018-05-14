@@ -15,6 +15,10 @@ body{
 	line-height: 1.5rem;
 }
 
+// div {
+//   transition: all 0.5s ease;
+// }
+
 #globalHeader {
     position: fixed;
     top: 0;
@@ -26,6 +30,9 @@ body{
 
 .logo{
 	margin: 2rem 0 0 1rem;
+
+	transition:top 1s linear;
+
     @media ($tablet-up) {	
 		margin: 2rem 0 0 3rem;
 	}
@@ -161,10 +168,25 @@ border-radius: 6px;
 		border:none;
 		color:white;
 		width:100%;
+		transition: background 0.2s ease;
+
 		@media ($tablet-up) {
+
 	    	width:120px;
 	    	display:inline-block;
 	    	margin-right:0;
+	    	transition: background 0.2s ease;
+
+	    	&:hover{
+				transition: all 0.5s ease;
+				background: #bb0300;
+				cursor:pointer;
+			}
+		}
+		&:hover{
+			transition: all 0.5s ease;
+			background: #bb0300;
+			cursor:pointer;
 		}
 	}
 }
@@ -181,6 +203,7 @@ border-radius: 6px;
     width: 12rem;
     height: 12rem;
     background-size: cover;
+    // transition:top 1s linear;
 
 	@media ($tablet-up) {
 	    position: absolute;
@@ -194,6 +217,7 @@ border-radius: 6px;
 	    width: 10rem;
 	    height: 10rem;
 	    background-size: cover;
+	    // transition:top 1s linear;
 	}
 }
 
