@@ -32,7 +32,7 @@ body{
 
  .hero {
  	float:left;
-    background: url(../images/background-sm.svg);
+    background: url(/site/images/background-sm.svg);
     height: 800px;
     width: 100%;
     background-position: top center;
@@ -41,7 +41,7 @@ body{
     position: relative;
 
     @media ($tablet-up) {
-	    background: url(../images/background.svg);
+	    background: url(/site/images/background.svg);
 	    height: 1000px;
 	    width: 100%;
 	    background-position: top center;
@@ -92,7 +92,7 @@ p{
     top: 4%;
     margin-left: -3.3rem;
     z-index: 100;
-    background-image: url(/images/coin.png);
+    background-image: url(/site/images/coin.png);
     width: 100rem;
     height: 40rem;
     width: 10rem;
