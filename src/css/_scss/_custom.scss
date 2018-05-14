@@ -32,7 +32,7 @@ body{
 
  .hero {
  	float:left;
-    background: url(/site/images/background-sm.svg);
+    background: url(../images/background-sm.svg);
     height: 800px;
     width: 100%;
     background-position: top center;
@@ -41,7 +41,7 @@ body{
     position: relative;
 
     @media ($tablet-up) {
-	    background: url(/site/images/background.svg);
+	    background: url(../images/background.svg);
 	    height: 1000px;
 	    width: 100%;
 	    background-position: top center;
