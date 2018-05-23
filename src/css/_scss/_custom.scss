@@ -50,6 +50,17 @@ body{
 	    }
 }
 
+.sky{
+	width:100%;
+	position:absolute;
+	height: 720px;
+	background: #10497d;
+	background: -moz-linear-gradient(top, #10497d 0%, #b0e0ff 100%);
+	background: -webkit-linear-gradient(top, #10497d 0%,#b0e0ff 100%);
+	background: linear-gradient(to bottom, #10497d 0%,#b0e0ff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10497d', endColorstr='#b0e0ff',GradientType=0 );
+}
+
  .mountain {
  	position:absolute;
  	background: url(../images/background-sm.svg);
@@ -62,23 +73,23 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 
+}
 
-    @media ($tablet-up) {
-	    background: url(../images/background.svg);
+@media ($tablet-up) {
+    .mountain {
+	    background: url(../images/asset-1.svg);
 	    height: 1740px;
 	    width: 2800px;
-	    background-position: top center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    top: -50px;
+	    top: 200px;
 	    left: 50%;
 	    margin: 0;
 	    margin-left: -1400px;
+	        background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 	}
 
-
-}
-
+ }
 
 
 .about{
@@ -135,14 +146,14 @@ border-radius: 6px;
     margin: 0 0 0.9rem 0;
 
 	    @media ($tablet-up) {
-	    	    width: 280px;
+	    	width: 280px;
 	    	display:inline-block;
 	    	background-color:transparent;;
 	    	color:white;
 	    	border:white 1px solid;
 	    	padding: .7rem;
     		font-size: .65rem;
-    		    margin-right: 10px;
+    		margin-right: 10px;
 		}
 
 
